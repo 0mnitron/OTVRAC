@@ -1,0 +1,1 @@
+\copy (SELECT g.id, g.title, g.publisher, g.developer, g.genre, g.launch_price_usd, g.pegi_rating, g.game_engine, g.multiplayer::text AS multiplayer, gp.platform_name, gp.release_date, gp.metacritic_score FROM games g JOIN game_platforms gp ON g.id = gp.game_id ORDER BY g.id, gp.release_date, gp.platform_name) TO 'games.csv' WITH CSV HEADER;

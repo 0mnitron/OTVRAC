@@ -1,0 +1,46 @@
+id,title,publisher,developer,genre,launch_price_usd,pegi_rating,game_engine,multiplayer,platform_name,release_date,metacritic_score
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,PC,2015-05-19,93
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,PlayStation 4,2015-05-19,92
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,Xbox One,2015-05-19,91
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,Nintendo Switch,2019-10-15,85
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,PlayStation 5,2022-12-14,94
+1,The Witcher 3: Wild Hunt,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 3,false,Xbox Series X/S,2022-12-14,94
+2,The Elder Scrolls V: Skyrim,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,PC,2011-11-11,94
+2,The Elder Scrolls V: Skyrim,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,PlayStation 3,2011-11-11,92
+2,The Elder Scrolls V: Skyrim,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,Xbox 360,2011-11-11,96
+3,Fallout 4,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,PC,2015-11-10,84
+3,Fallout 4,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,PlayStation 4,2015-11-10,87
+3,Fallout 4,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,Xbox One,2015-11-10,88
+3,Fallout 4,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,PlayStation 5,2024-04-25,
+3,Fallout 4,Bethesda Softworks,Bethesda Game Studios,Action RPG,59.99,18,Creation Engine,false,Xbox Series X/S,2024-04-25,
+4,Far Cry 5,Ubisoft,Ubisoft Montreal,FPS,59.99,18,Dunia Engine 2,true,PC,2018-03-27,78
+4,Far Cry 5,Ubisoft,Ubisoft Montreal,FPS,59.99,18,Dunia Engine 2,true,PlayStation 4,2018-03-27,81
+4,Far Cry 5,Ubisoft,Ubisoft Montreal,FPS,59.99,18,Dunia Engine 2,true,Xbox One,2018-03-27,82
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,PC,2020-12-10,86
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,PlayStation 4,2020-12-10,57
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,Xbox One,2020-12-10,61
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,PlayStation 5,2022-02-15,75
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,Xbox Series X/S,2022-02-15,87
+5,Cyberpunk 2077,CD Projekt,CD Projekt Red,Action RPG,59.99,18,REDengine 4,false,Nintendo Switch 2,2025-06-05,
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,PC,2022-02-25,94
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,PlayStation 4,2022-02-25,
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,PlayStation 5,2022-02-25,96
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,Xbox One,2022-02-25,
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,Xbox Series X/S,2022-02-25,96
+6,Elden Ring,Bandai Namco Entertainment,FromSoftware,Action RPG,59.99,16,Dantelion Engine,true,Nintendo Switch 2,2026-08-28,
+7,Red Dead Redemption 2,Rockstar Games,Rockstar Studios,Action-adventure,59.99,18,RAGE,true,PlayStation 4,2018-10-26,97
+7,Red Dead Redemption 2,Rockstar Games,Rockstar Studios,Action-adventure,59.99,18,RAGE,true,Xbox One,2018-10-26,97
+7,Red Dead Redemption 2,Rockstar Games,Rockstar Studios,Action-adventure,59.99,18,RAGE,true,PC,2019-11-05,93
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,PlayStation 3,2013-09-17,97
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,Xbox 360,2013-09-17,97
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,PlayStation 4,2014-11-18,97
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,Xbox One,2014-11-18,97
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,PC,2015-04-14,96
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,PlayStation 5,2022-03-15,81
+8,Grand Theft Auto V,Rockstar Games,Rockstar North,Action-adventure,59.99,18,RAGE,true,Xbox Series X/S,2022-03-15,79
+9,DOOM (2016),Bethesda Softworks,id Software,FPS,59.99,18,id Tech 6,true,PC,2016-05-13,85
+9,DOOM (2016),Bethesda Softworks,id Software,FPS,59.99,18,id Tech 6,true,PlayStation 4,2016-05-13,85
+9,DOOM (2016),Bethesda Softworks,id Software,FPS,59.99,18,id Tech 6,true,Xbox One,2016-05-13,87
+9,DOOM (2016),Bethesda Softworks,id Software,FPS,59.99,18,id Tech 6,true,Nintendo Switch,2017-11-10,79
+10,Horizon Zero Dawn,Sony Interactive Entertainment,Guerrilla Games,Action RPG,59.99,16,Decima,false,PlayStation 4,2017-02-28,89
+10,Horizon Zero Dawn,Sony Interactive Entertainment,Guerrilla Games,Action RPG,59.99,16,Decima,false,PC,2020-08-07,84
