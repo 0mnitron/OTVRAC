@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="my-4">
+    <h1 class="mb-3">Video Games Dataset</h1>
+
+    <!-- CSV and JSON Dataset Download -->
+    <section class="mb-4">
+        <h2 class="h5 text-secondary">Download Complete Dataset</h2>
+        <div class="d-flex gap-2 my-2">
+            <a href="{{ url_for('download_file', filename='games.csv') }}" class="btn btn-success">
+                Download CSV
+            </a>
+            <a href="{{ url_for('download_file', filename='games.json') }}" class="btn btn-primary">
+                Download JSON
+            </a>
+        </div>
+    </section>
+
+    <!-- Link to Datatable Page -->
+    <section class="mb-5">
+        <h2 class="h5 text-secondary">Interactive View</h2>
+        <a href="{{ url_for('datatable') }}" class="btn btn-outline-dark">
+            Open Data Table &amp; Filter Records
+        </a>
+    </section>
+
+    <!-- Dataset Description -->
+    <section class="border-top pt-4">
+        <h2 class="h4 mb-3">About the Dataset</h2>
+        <p>
+            This dataset consists of 10 popular modern video games, containing their core
+            technical and commercial attributes, along with their platform releases,
+            release dates, and Metacritic scores.
+        </p>
+
+        <h3 class="h5 mt-4">Attributes</h3>
+        <ul class="list-group list-group-flush mb-4" style="max-width: 700px;">
+            <li class="list-group-item"><strong>id</strong> (Integer): Unique identifier for each game.</li>
+            <li class="list-group-item"><strong>title</strong> (String): Official title of the video game.</li>
+            <li class="list-group-item"><strong>publisher</strong> (String): Company that published the game.</li>
+            <li class="list-group-item"><strong>developer</strong> (String): Studio that developed the game.</li>
+            <li class="list-group-item"><strong>genre</strong> (String): Main gameplay genre.</li>
+            <li class="list-group-item"><strong>launch_price_usd</strong> (Decimal): Launch retail price in USD.</li>
+            <li class="list-group-item"><strong>pegi_rating</strong> (Integer): Age rating by PEGI (3, 7, 12, 16, 18).</li>
+            <li class="list-group-item"><strong>game_engine</strong> (String): Engine used to develop the game.</li>
+            <li class="list-group-item"><strong>multiplayer</strong> (Boolean): Whether the game has multiplayer (true/false).</li>
+            <li class="list-group-item"><strong>platform_name / name</strong> (String): Platform the game was released on.</li>
+            <li class="list-group-item"><strong>release_date</strong> (Date): Release date on that platform (YYYY-MM-DD).</li>
+            <li class="list-group-item"><strong>metacritic_score</strong> (Integer, nullable): Metacritic review score (0-100).</li>
+        </ul>
+
+        <h3 class="h5 mt-4">Metadata</h3>
+        <ul class="list-unstyled">
+            <li><strong>Author:</strong> Anđelko Kućar</li>
+            <li><strong>Version:</strong> 1.0</li>
+            <li><strong>Language:</strong> English (en)</li>
+            <li><strong>License:</strong> Creative Commons Zero v1.0 Universal (CC0 1.0)</li>
+        </ul>
+    </section>
+</div>
+{% endblock %}

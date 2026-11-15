@@ -1,0 +1,107 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/0mnitron/OTVRAC/main/schema.json",
+  "title": "Video Games Dataset",
+  "description": "A collection of computer video games including details about developers, publishers, pricing, and platform releases.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "title": "Video Game",
+    "description": "An entity representing a video game along with its platform releases.",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "title": "ID",
+        "description": "Unique identifier for each video game entity (Primary Key)."
+      },
+      "title": {
+        "type": "string",
+        "title": "Video Game Title",
+        "description": "Official title of the video game."
+      },
+      "publisher": {
+        "type": "string",
+        "title": "Publisher",
+        "description": "Company that published the game."
+      },
+      "developer": {
+        "type": "string",
+        "title": "Developer",
+        "description": "Studio that developed the game."
+      },
+      "genre": {
+        "type": "string",
+        "title": "Genre",
+        "description": "Main gameplay genre."
+      },
+      "launch_price_usd": {
+        "type": "number",
+        "title": "Launch Price (USD)",
+        "description": "Launch retail price in USD on the first platform where the game was released.",
+        "minimum": 0
+      },
+      "pegi_rating": {
+        "type": "integer",
+        "title": "PEGI Rating",
+        "description": "Age rating by PEGI (valid values: 3, 7, 12, 16, 18).",
+        "enum": [3, 7, 12, 16, 18]
+      },
+      "game_engine": {
+        "type": "string",
+        "title": "Game Engine",
+        "description": "Engine used to develop the game."
+      },
+      "multiplayer": {
+        "type": "boolean",
+        "title": "Multiplayer Support",
+        "description": "Whether the game has multiplayer (true or false)."
+      },
+      "platforms": {
+        "type": "array",
+        "title": "Platform Releases",
+        "description": "List of platform releases for this game, including release dates and review scores.",
+        "items": {
+          "type": "object",
+          "title": "Platform Release",
+          "description": "Details of the release on a specific platform.",
+          "properties": {
+            "name": {
+              "type": "string",
+              "title": "Platform Name",
+              "description": "Platform the game was released on (e.g., PC, PlayStation 5)."
+            },
+            "release_date": {
+              "type": "string",
+              "format": "date",
+              "title": "Release Date",
+              "description": "Release date on that specific platform in ISO-8601 format (YYYY-MM-DD)."
+            },
+            "metacritic_score": {
+              "type": ["integer", "null"],
+              "title": "Metacritic Score",
+              "description": "Metacritic review score (0-100) for that platform, or null if unrated.",
+              "minimum": 0,
+              "maximum": 100
+            }
+          },
+          "required": [
+            "name",
+            "release_date"
+          ]
+        }
+      }
+    },
+    "required": [
+      "id",
+      "title",
+      "publisher",
+      "developer",
+      "genre",
+      "launch_price_usd",
+      "pegi_rating",
+      "game_engine",
+      "multiplayer",
+      "platforms"
+    ]
+  }
+}

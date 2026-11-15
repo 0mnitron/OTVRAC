@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h1 class="h3 mb-0">Video Games Catalog</h1>
+    </div>
+
+    <!-- Search / Filter Form -->
+    <div class="card border-0 shadow-sm mb-4">
+        <div class="card-body">
+            <form id="filterForm" class="row g-3 align-items-end">
+                <div class="col-md-5">
+                    <label for="searchInput" class="form-label fw-semibold">Search Value</label>
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search games...">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="attributeSelect" class="form-label fw-semibold">Search by Attribute</label>
+                    <select class="form-select" id="attributeSelect">
+                        <option value="all" selected>All attributes (wildcard)</option>
+                        <option value="title">Title</option>
+                        <option value="publisher">Publisher</option>
+                        <option value="developer">Developer</option>
+                        <option value="genre">Genre</option>
+                        <option value="launch_price_usd">Launch Price (USD)</option>
+                        <option value="pegi_rating">PEGI Rating</option>
+                        <option value="game_engine">Game Engine</option>
+                        <option value="multiplayer">Multiplayer (true/false)</option>
+                        <option value="platform_name">Platform</option>
+                        <option value="release_date">Release Date (YYYY-MM-DD)</option>
+                        <option value="metacritic_score">Metacritic Score</option>
+                    </select>
+                </div>
+
+                <div class="col-md-3 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary w-100">Filter</button>
+                    <button type="button" id="resetBtn" class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Filtered Download Actions -->
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-muted small" id="recordCount">Loading records...</span>
+        <div class="d-flex gap-2">
+            <a id="downloadCsv" href="/api/games?format=csv" class="btn btn-outline-success btn-sm">
+                Download Filtered CSV
+            </a>
+            <a id="downloadJson" href="/api/games?format=json&download=1" class="btn btn-outline-primary btn-sm">
+                Download Filtered JSON
+            </a>
+        </div>
+    </div>
+
+    <!-- Data Table -->
+    <div class="table-responsive bg-white rounded shadow-sm">
+        <table class="table table-hover table-striped align-middle mb-0">
+            <thead class="table-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Publisher</th>
+                    <th>Developer</th>
+                    <th>Genre</th>
+                    <th>Engine</th>
+                    <th>Price ($)</th>
+                    <th>PEGI</th>
+                    <th>Multiplayer</th>
+                    <th>Platforms (Release Date, Metacritic)</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Dynamically rendered via JS -->
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/datatable.js') }}"></script>
+{% endblock %}
